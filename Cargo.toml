@@ -1,0 +1,10 @@
+[package]
+name = "imagechopper"
+version = "0.1.0"
+authors = ["Mijyuoon <mijyuoon@gmail.com>"]
+
+[dependencies]
+raster = "0.2.0"
+
+[profile.release]
+lto = true

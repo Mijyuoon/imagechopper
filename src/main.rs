@@ -12,11 +12,11 @@ fn main() -> Result<(), String> {
                     .ok_or("No input filename provided".to_string())?;
     let outdir = args.next()
                     .ok_or("No output directory provided".to_string())?;
-    let rows = args.next()
-                    .ok_or("No row count provided".to_string())
-                    .and_then(|x| x.parse::<i32>().map_err(|y| y.to_string()))?;
     let cols = args.next()
                     .ok_or("No column count provided".to_string())
+                    .and_then(|x| x.parse::<i32>().map_err(|y| y.to_string()))?;
+    let rows = args.next()
+                    .ok_or("No row count provided".to_string())
                     .and_then(|x| x.parse::<i32>().map_err(|y| y.to_string()))?;
 
     let outdir = Path::new(&outdir);

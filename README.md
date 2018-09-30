@@ -3,5 +3,5 @@ Small utility to chop an image into a rectangular grid of chunks, saving each to
 
 ## Usage
 ```
-imagechopper <src-file> <output-dir> <rows> <columns>
+imagechopper <src-file> <output-dir> <columns> <rows>
 ```
